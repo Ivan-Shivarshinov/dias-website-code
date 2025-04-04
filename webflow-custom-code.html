@@ -1,8 +1,9 @@
-<!-- Стили для компонентов -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ВАШЕ-ИМЯ-ПОЛЬЗОВАТЕЛЯ/dias-website-modules/styles.css">
-
-<!-- Подключение скриптов -->
 <script>
+    /**
+    * Dias Website - Main Loader
+    * Загрузчик модулей для сайта Dias
+    */
+
     document.addEventListener('DOMContentLoaded', () => {
         // Медиазапросы для разных размеров экрана
         let mm = gsap.matchMedia();
@@ -25,9 +26,9 @@
         // Функция для загрузки модулей
         function loadModule(moduleName) {
             const script = document.createElement('script');
-            script.src = `https://cdn.jsdelivr.net/gh/ВАШЕ-ИМЯ-ПОЛЬЗОВАТЕЛЯ/dias-website-modules@main/${moduleName}`;
+            script.src = `https://cdn.jsdelivr.net/gh/Ivan-Shivarshinov/dias-website-code/${moduleName}`;
             script.async = true;
             document.head.appendChild(script);
         }
-    });
+    }); 
 </script>

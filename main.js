@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Функция для загрузки модулей
     function loadModule(moduleName) {
         const script = document.createElement('script');
-        script.src = `https://cdn.jsdelivr.net/gh/ВАШ-ЮЗЕРНЕЙМ-GITHUB/dias-website-modules/${moduleName}`;
+        script.src = `https://cdn.jsdelivr.net/gh/Ivan-Shivarshinov/dias-website-code/${moduleName}`;
         script.async = true;
         document.head.appendChild(script);
     }
